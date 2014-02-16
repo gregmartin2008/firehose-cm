@@ -1,11 +1,18 @@
-<div class="ice-box">
-	<%= simple_form_for @pic do |f| %>
-	 <h1 class="awesome-sauce">
-	  <%= f.input :title %>
-	  <%= f.input :message %>
-	  <%= f.input :who %>
+<div class="ice-box span7 offset3 text-center">
+<h1 class="Jack-Guest">
+	Share your Overlook Guest gif
+	
+	<br />
 
-	  <%= f.submit "Save" %>
+	<br />
+
+	<%= simple_form_for @pic do |f| %>
+	 
+	  <%= f.input :title, label: 'gif Title' , placeholder: 'e.g. Jack axes, Wendy cries' %>
+	  <%= f.input :message, label: 'Overheard in the Overlook' , placeholder: "Here's Johnny!" %>
+	  <%= f.input :who, label: 'Guest Name' , placeholder: 'e.g., Jack, Wendy, Danny, etc.' %>
+
+	  <%= f.submit "Enter", :class => 'btn btn-danger btn-large' %>
 
 	<% end %>	
 </div>
