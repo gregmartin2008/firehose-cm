@@ -1,12 +1,17 @@
 	<% @pics.each do |pic| %>
 	<div class="ice-box span4 text-center">
-			<h1 class="awesome-sauce-small">
+			<h1 class="awesome-sauce-small-white">
 		<%= pic.title %>
-			<h2>
+			<h2 class="Jack-Guest">
+		<br />
 		<%= pic.message %>
 		<br />
 			<h3 class="miniver">
-		<%= pic.who %>
 		<br />
+		<%= image_tag pic.image %>
+		<br />
+		<br />
+		<%= pic.who %>
+				
 	</div>
 	<% end %>

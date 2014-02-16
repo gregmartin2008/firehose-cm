@@ -8,10 +8,13 @@
 
 	<%= simple_form_for @pic do |f| %>
 	 
-	  <%= f.input :title, label: 'gif Title' , placeholder: 'e.g. Jack axes, Wendy cries' %>
+	  <%= f.input :title, label: 'Title' , placeholder: 'e.g. Jack axes, Wendy cries' %>
+	 
 	  <%= f.input :message, label: 'Overheard in the Overlook' , placeholder: "Here's Johnny!" %>
 	  <%= f.input :who, label: 'Guest Name' , placeholder: 'e.g., Jack, Wendy, Danny, etc.' %>
-
+	  <br />
+	   <%= f.input :image, label: 'Upload a Picture' %>
+	   <br />
 	  <%= f.submit "Enter", :class => 'btn btn-danger btn-large' %>
 
 	<% end %>	
